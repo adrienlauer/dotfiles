@@ -1,6 +1,33 @@
 [user]
   name = Adrien LAUER
   email = adrien.lauer@gmail.com
+
 [core]
   autocrlf = input
   excludesfile = ~/.gitignore_global
+
+[color]
+  ui = auto
+
+[alias]
+  st = status
+  ci = commit
+  lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset'  
+
+[log]
+  abbrevCommit = true
+
+[merge]
+  conflictStyle = diff3
+
+[diff]
+  mnemonicPrefix = true
+  renames = true
+  wordRegex = .
+  submodule = log
+
+[status]
+  submoduleSummary = true
+
+[push]
+  default = upstream
