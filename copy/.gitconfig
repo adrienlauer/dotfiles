@@ -1,0 +1,6 @@
+[user]
+  name = Adrien LAUER
+  email = adrien.lauer@gmail.com
+[core]
+  autocrlf = input
+  excludesfile = ~/.gitignore_global
