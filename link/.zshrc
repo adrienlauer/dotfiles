@@ -7,7 +7,7 @@ export DOTFILES=~/.dotfiles
 PATH=$DOTFILES/bin:$PATH
 export PATH
 
-# Source all files in "source"
+# Source all files in "source" and ~/.zshrc.local
 function src() {
   local file
   if [ $1 ]; then
@@ -17,6 +17,7 @@ function src() {
       source "$file"
     done
   fi
+  [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 }
 
 # Run dotfiles script, then source.
