@@ -5,3 +5,5 @@ CursorColour=255,255,255
 CursorBlinks=no
 FontIsBold=no
 FontSmoothing=full
+Columns=120
+Rows=50
