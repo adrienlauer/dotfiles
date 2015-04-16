@@ -1,9 +1,13 @@
 # Cygwin-only stuff
 is_cygwin || return 1
 
-packages=(
-  tmux
-  weechat
+packages=( 
+    tmux 
+    weechat 
 )
 
-pact install $packages
+e_header "Installing packages: ${packages[*]}"
+for package in "${packages[@]}"; do
+    pact install $package
+done
+
