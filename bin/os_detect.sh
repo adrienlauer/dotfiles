@@ -4,7 +4,7 @@ function is_osx() {
 }
 
 function is_cygwin() {
-  [[ "$(uname -o)" =~ Cygwin ]] || return 1
+  [[ "$(uname -a)" =~ ^Cygwin ]] || return 1
 }
 
 function get_os() {
