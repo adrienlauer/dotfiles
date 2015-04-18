@@ -26,8 +26,5 @@
   wordRegex = .
   submodule = log
 
-[status]
-  submoduleSummary = true
-
 [push]
   default = upstream
