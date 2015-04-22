@@ -14,6 +14,8 @@ recipes=(
   tmux
   weechat
   zsh
+  maven
+  gradle
 )
 
 brew_install_recipes
