@@ -5,6 +5,9 @@
 [core]
   autocrlf = input
   excludesfile = ~/.gitignore_global
+  trustctime = false
+  preloadindex = true
+  fscache = true
 
 [color]
   ui = auto
