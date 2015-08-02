@@ -8,6 +8,7 @@ is_osx || return 1
 recipes=(
   git
   git-extras
+  hg
   htop-osx
   hub
   node
@@ -16,8 +17,6 @@ recipes=(
   zsh
   maven
   gradle
-  caskroom/cask/brew-cask
-  boot2docker
 )
 
 brew_install_recipes
