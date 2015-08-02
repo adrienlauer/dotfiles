@@ -16,6 +16,8 @@ recipes=(
   zsh
   maven
   gradle
+  caskroom/cask/brew-cask
+  boot2docker
 )
 
 brew_install_recipes
