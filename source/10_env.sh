@@ -13,4 +13,5 @@ fi
 if is_osx; then
   export PATH=/usr/local/bin:${GOPATH//://bin:}/bin:$PATH
   export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+  eval $(gpg-agent --daemon)
 fi
