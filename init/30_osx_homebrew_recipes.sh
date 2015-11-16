@@ -17,6 +17,8 @@ recipes=(
   zsh
   maven
   gradle
+  boot2docker
+  gpg-agent
 )
 
 brew_install_recipes
