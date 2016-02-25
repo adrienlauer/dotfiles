@@ -19,6 +19,7 @@ recipes=(
   gradle
   boot2docker
   gpg-agent
+  maven
 )
 
 brew_install_recipes
