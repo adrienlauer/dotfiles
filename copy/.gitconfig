@@ -13,6 +13,7 @@
   ui = auto
 
 [alias]
+  co = checkout
   st = status
   ci = commit
   lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset'  
