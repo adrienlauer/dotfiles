@@ -3,7 +3,7 @@
   email = adrien.lauer@gmail.com
 
 [core]
-  autocrlf = input
+  autocrlf = false
   excludesfile = ~/.gitignore_global
   trustctime = false
   preloadindex = true
