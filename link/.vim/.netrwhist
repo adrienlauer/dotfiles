@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/cygdrive/c/Profiles/u083051/.zprezto'
+let g:netrw_dirhist_2='/cygdrive/c/Profiles/u083051/Projects/temp/demo/src/main/resources'
+let g:netrw_dirhist_3='/cygdrive/c/Users/u083051/Projects/seedstack/javadoc'
