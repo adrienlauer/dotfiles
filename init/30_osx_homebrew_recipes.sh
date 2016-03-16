@@ -18,7 +18,6 @@ recipes=(
   zsh
   maven
   gradle
-  docker-machine
   gpg-agent
   maven
 )
