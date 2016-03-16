@@ -3,10 +3,10 @@ function substitute {
         echo "Usage: substitue FROM_STRING TO_STRING [OPTION]..."
         echo
         echo "Replace all occurances of FROM_STRING (a sed-compatible regular"
-        echo "expression) with TO_STRING in all files for which ack-grep matches"
+        echo "expression) with TO_STRING in all files for which ack matches"
         echo "FROM_STRING."
         echo
-        echo "Any additional options are passed directly to ack-grep (e.g.,"
+        echo "Any additional options are passed directly to ack (e.g.,"
         echo " --type=html would only run the substitution on html files)." 
         return 1
     fi
@@ -14,6 +14,6 @@ function substitute {
     FROM_STRING=${1/\//\\/}
     TO_STRING=${2/\//\\/}
     shift 2
-    ack-grep -l --print0 "$@" "$FROM_STRING" | xargs -0 -n 1 sed -i -e "s/$FROM_STRING/$TO_STRING/g"
+    ack -l --print0 "$@" "$FROM_STRING" | xargs -0 -n 1 sed -i -e "s/$FROM_STRING/$TO_STRING/g"
 }
 
