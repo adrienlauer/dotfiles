@@ -13,11 +13,12 @@ recipes=(
   hub
   node
   tmux
+  ack
   weechat
   zsh
   maven
   gradle
-  boot2docker
+  docker-machine
   gpg-agent
   maven
 )
