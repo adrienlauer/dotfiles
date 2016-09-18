@@ -20,6 +20,9 @@ recipes=(
   gradle
   gpg-agent
   maven
+  gpg
+  tomcat
+  hugo
 )
 
 brew_install_recipes
