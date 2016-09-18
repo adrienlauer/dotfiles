@@ -17,3 +17,12 @@ function substitute {
     ack -l --print0 "$@" "$FROM_STRING" | xargs -0 -n 1 sed -i -e "s/$FROM_STRING/$TO_STRING/g"
 }
 
+function seedstack {
+    if [ -z "$1" ]; then
+        echo "Usage: seedstack GOAL [ARGS]..."
+        return 1
+    fi
+    GOAL=$1
+    shift
+    mvn -q org.seedstack:seedstack-maven-plugin:$GOAL -Dargs="$*"
+}

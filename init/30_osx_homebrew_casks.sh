@@ -18,8 +18,6 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 
 # Homebrew casks
 casks=(
-  virtualbox
-  dockertoolbox
 )
 
 # Install Homebrew casks.
